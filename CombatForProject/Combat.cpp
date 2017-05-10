@@ -22,7 +22,7 @@ int main()
 	if (init == 1) {
 		cout << "You start.\n";
 		while (hp > 0 || mhp > 0) {
-			cout << "What do you want to do?\n1 - Fierce Attack\n2 - Light Attack\n3 - Defensive moves\n";
+			cout << "What do you want to do?\n1 - Heavy Attack\n2 - Light Attack\n3 - Defensive moves\n";
 			do { cin >> choice; } while (choice>3 || choice<1);
 			switch (choice) {
 			case 1:
@@ -60,7 +60,7 @@ int main()
 				break;
 			}
 
-			//
+			//Monster Damage #1
 			mhurt = (atk - magi) - (mdef / atk);
 			if (mhurt < 0) {
 				mhurt = 0;
@@ -127,7 +127,7 @@ int main()
 				return 0;
 			}
 			cout << "You now have " << hp << " hp left.\n\n";
-			cout << "What do you want to do?\n1 - Fierce Attack\n2 - Lithe Attack\n3 - Defensive moves\n";
+			cout << "What do you want to do?\n1 - Heavy Attack\n2 - Light Attack\n3 - Defensive moves\n";
 			do { cin >> choice; } while (choice>3 || choice<1);
 			switch (choice) {
 			case 1:
@@ -148,7 +148,7 @@ int main()
 			}
 
 
-			//Monster Damage
+			//Monster Damage #2
 			mhurt = (atk - magi) - (mdef / atk);
 			if (mhurt < 0) {
 				mhurt = 0;
@@ -158,7 +158,7 @@ int main()
 			cin.get();
 			//Death:
 			if (mhp < 1) {
-				cout << "You killed the beast!! You won with " << hp << " hp left.\n";
+				cout << "You killed the beast! You won with " << hp << " hp left.\n";
 				cin.get();
 				return 0;
 			}
