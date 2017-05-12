@@ -70,7 +70,7 @@ int main()
 			cin.get();
 			//Death of the beast!
 			if (mhp < 1) {
-				cout << "You killed the beast! You won with " << hp << " hp left.\n";
+				cout << "You killed the beast! You won with " << hp << " hp remaining.\n";
 				cin.get();
 				return 0;
 			}
@@ -83,11 +83,11 @@ int main()
 			cout << "The monster hits you for " << hurt << " damage.\n";
 			//More death
 			if (hp < 1) {
-				cout << "You died. The beast still has " << mhp << " hp left.\n";
+				cout << "You died. The beast still has " << mhp << " hp remaining.\n";
 				cin.get();
 				return 0;
 			}
-			cout << "You now have " << hp << " hp left.\n\n";
+			cout << "You now have " << hp << " hp remaining.\n\n";
 		}
 	}
 
@@ -122,11 +122,11 @@ int main()
 			cout << "The monster hits you for " << hurt << " damage.\n";
 			//Death
 			if (hp < 1) {
-				cout << "You died. The beast still has " << mhp << " hp left.\n";
+				cout << "You've died. The beast still has " << mhp << " hp left.\n";
 				cin.get();
 				return 0;
 			}
-			cout << "You now have " << hp << " hp left.\n\n";
+			cout << "You now have " << hp << " hp remaining.\n\n";
 			cout << "What do you want to do?\n1 - Fierce Attack\n2 - Lithe Attack\n3 - Defensive moves\n";
 			do { cin >> choice; } while (choice>3 || choice<1);
 			switch (choice) {
@@ -158,7 +158,7 @@ int main()
 			cin.get();
 			//Death:
 			if (mhp < 1) {
-				cout << "You killed the beast!! You won with " << hp << " hp left.\n";
+				cout << "You've killed the beast! You won with " << hp << " hp remaining.\n";
 				cin.get();
 				return 0;
 			}
